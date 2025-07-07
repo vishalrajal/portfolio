@@ -81,7 +81,7 @@ const Hero = () => {
             <h1 className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-blue-300 bg-clip-text text-transparent transform transition-all duration-1000 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}>
-              Vishal Raja
+              Vishal Raja L
             </h1>
           </div>
           

@@ -8,45 +8,47 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Senior Software Engineer',
-      company: 'Tech Solutions Inc.',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
+      title: 'Python Data analyst Intern',
+      company: 'Growai',
+      location: 'Remote',
+      period: '2024 - 2025',
       description: [
-        'Led development of microservices architecture serving 100K+ daily users',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Mentored junior developers and conducted code reviews',
-        'Collaborated with cross-functional teams to deliver high-quality products'
+        'Developed and optimized Python scripts for data extraction, transformation, and analysis across large datasets',
+        'Automated data pipelines and cleaning workflows, improving processing efficiency by 40%',
+        'Built dashboards and visual reports using tools like Pandas, Matplotlib, and Seaborn to support business insights',
+        'Collaborated with data science and engineering teams to validate models and ensure data integrity',
+        'Contributed to anomaly detection systems that enhanced data quality monitoring and reduced errors by 30%'
       ],
-      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'PostgreSQL'],
+      technologies: ['Python', 'Numpy', 'Pandas', 'Google Colab', 'Juypiter Notebook'],
       color: 'from-blue-500 to-cyan-500'
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations Ltd.',
-      location: 'Austin, TX',
-      period: '2020 - 2022',
+      title: 'Cyber-Security Intern',
+      company: 'Marcello Tech',
+      location: 'Trichy, In',
+      period: '2025',
       description: [
-        'Developed and maintained web applications using modern JavaScript frameworks',
-        'Designed and implemented RESTful APIs and database schemas',
-        'Optimized application performance resulting in 40% faster load times',
-        'Participated in agile development processes and sprint planning'
+        'Conducted vulnerability assessments and penetration testing on web applications and internal systems',
+        'Analyzed network traffic and logs to identify potential threats and anomalies',
+        'Assisted in implementing security policies and access controls to enhance system protection',
+        'Performed security audits and reported findings to improve infrastructure resilience',
+        'Collaborated with the security team on real-world incident response and threat mitigation strategies'
       ],
-      technologies: ['Vue.js', 'Express.js', 'MongoDB', 'Redis', 'Git'],
+      technologies: ['SQL', 'SQL Injection', 'Selenium', 'Burp Suit', 'Git'],
       color: 'from-green-500 to-emerald-500'
     },
     {
-      title: 'Software Developer',
-      company: 'StartupXYZ',
-      location: 'Remote',
-      period: '2019 - 2020',
+      title: 'Upcoming',
+      company: '----',
+      location: '----',
+      period: '20-- - 20--',
       description: [
-        'Built responsive web applications from concept to deployment',
-        'Worked closely with designers to implement pixel-perfect UI/UX',
-        'Integrated third-party APIs and payment systems',
-        'Maintained and improved existing codebase'
+        '---',
+        '---',
+        '---',
+        '---'
       ],
-      technologies: ['React', 'Python', 'Django', 'SQLite', 'Bootstrap'],
+      technologies: ['---', '---', '---', '---', '---'],
       color: 'from-purple-500 to-pink-500'
     }
   ];

@@ -57,10 +57,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent animate-pulse">
-              Vishal Raja
+              Vishal Raja L
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Software Engineer passionate about creating innovative solutions 
+              Full Stack Development passionate about creating innovative solutions 
               and building exceptional digital experiences.
             </p>
             <div className="flex space-x-4">
@@ -104,18 +104,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Get In Touch</h3>
             <div className="space-y-2 text-gray-400">
-              <p className="hover:text-blue-400 transition-colors duration-300">San Francisco, CA</p>
+              <p className="hover:text-blue-400 transition-colors duration-300">Karaikal, IN</p>
               <a
-                href="mailto:vishal@example.com"
+                href="mailto:official.vishalraja.org@gmail.com"
                 className="block hover:text-blue-400 transition-colors duration-300"
               >
-                vishal@example.com
+                official.vishalraja.org@gmail.com
               </a>
               <a
-                href="tel:+15551234567"
+                href="tel:+919865471727"
                 className="block hover:text-blue-400 transition-colors duration-300"
               >
-                +1 (555) 123-4567
+                +91 9865471727
               </a>
             </div>
           </div>

@@ -33,9 +33,9 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: <Award className="w-8 h-8" />, number: '3+', label: 'Years Experience' },
-    { icon: <Users className="w-8 h-8" />, number: '50+', label: 'Projects Completed' },
-    { icon: <Lightbulb className="w-8 h-8" />, number: '15+', label: 'Technologies' },
+    { icon: <Award className="w-8 h-8" />, number: '1', label: 'Year of Internship Experience' },
+    { icon: <Users className="w-8 h-8" />, number: '5+', label: 'Projects Completed' },
+    { icon: <Lightbulb className="w-8 h-8" />, number: '10+', label: 'Technologies' },
     { icon: <Target className="w-8 h-8" />, number: '100%', label: 'Client Satisfaction' }
   ];
 

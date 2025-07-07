@@ -21,30 +21,30 @@ const Education = () => {
 
   const certifications = [
     {
-      title: 'Python Data Analyst Intern',
+      title: '6 months Data Analyst course completion',
       issuer: 'Growai',
       date: '2024',
-      credentialId: '4857281125VL',
+      credentialId: '9952130713VL',
       color: 'from-orange-500 to-yellow-500'
     },
     {
-      title: 'The Complete Full Stack Web Development Bootcamp',
+      title: 'The Complete Full Stack Web Development Bootcamp by Dr. Angela YU',
       issuer: 'Udemy',
       date: '2022',
       credentialId: '',
       color: 'from-green-500 to-emerald-500'
     },
     {
-      title: 'React Developer Certification',
+      title: 'React Developer Certification in 12 days Live classes',
       issuer: 'Learnz Development Hub',
       date: '2025',
       CertificateId: 'CERT-2025-60e96308-3e86-4b57-affe-1144cbe1ddac',
       color: 'from-blue-500 to-purple-500'
     },
     {
-      title: 'upcoming',
-      issuer: 'upcoming',
-      date: '----',
+      title: '3 Months Frontend Development Course (HTML + CSS + JavaScript + ReactJS + AI Tools)',
+      issuer: 'Learnz Development Hub',
+      date: '2025',
       credentialId: '------',
       color: 'from-cyan-400 to-blue-600'
     },
@@ -85,7 +85,33 @@ const Education = () => {
       year: '----',
       icon: <Trophy className="w-6 h-6" />
     }
+    
   ];
+    const workshops = [
+    {
+      title: 'Live JavaScript Bootcamp: Learn, Code, Build Together (Batch 1)',
+      description: 'Gained hands-on experience with core JavaScript concepts including DOM manipulation, ES6 syntax, and event handling. Built interactive mini-projects collaboratively, enhancing real-time coding and problem-solving skills.',
+      year: '2024',
+      icon: <Trophy className="w-6 h-6" />,
+      color: 'from-teal-400 to-cyan-500'
+    },
+    {
+      title: 'Java Spring Boot Workshop by Kenstack Technologies',
+      description: 'Learned to build RESTful web services using Java Spring Boot, covering core concepts like dependency injection and JPA. Developed backend APIs with practical exposure to Spring MVC, database integration, and CRUD operations.',
+      year: '2025',
+      icon: <Award className="w-6 h-6" />,
+      color: 'from-lime-300 to-green-500'
+    },
+    {
+      title: 'First Step into Frontend Development with AI (One Day Workshop)',
+      description: 'UpcomingExplored the basics of frontend development using HTML, CSS, and JavaScript, combined with AI-assisted coding tools. Gained hands-on experience building simple UI components while leveraging AI for faster development and debugging.',
+      year: '2025',
+      icon: <Trophy className="w-6 h-6" />,
+      color: 'from-sky-400 to-indigo-600'
+    }
+    
+  ];
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -111,7 +137,8 @@ const Education = () => {
   const tabs = [
     { id: 'education', label: 'Education', icon: <GraduationCap className="w-5 h-5" /> },
     { id: 'certifications', label: 'Certifications', icon: <Award className="w-5 h-5" /> },
-    { id: 'achievements', label: 'Achievements', icon: <Trophy className="w-5 h-5" /> }
+    { id: 'achievements', label: 'Achievements', icon: <Trophy className="w-5 h-5" /> },
+    { id: 'Workshops', label: 'Workshops', icon: <Trophy className="w-5 h-5" /> }
   ];
 
   return (
@@ -275,8 +302,41 @@ const Education = () => {
                   </div>
                 </div>
               ))}
+              
             </div>
           )}
+          {/* Workshops Tab */}
+{activeTab === 'Workshops' && (
+  <div className={`space-y-6 transform transition-all duration-500 ${
+    isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+  }`}>
+    {workshops.map((workshop, index) => (
+      <div
+        key={index}
+        className="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 hover:border-cyan-400/50 transition-all duration-500 hover:transform hover:scale-[1.02]"
+        style={{ animationDelay: `${index * 100}ms` }}
+      >
+        <div className="flex items-center mb-4">
+          <div className="p-3 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 bg-opacity-20 mr-4 text-cyan-400 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
+            {workshop.icon}
+          </div>
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+              {workshop.title}
+            </h4>
+            <p className="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+              {workshop.description}
+            </p>
+          </div>
+          <div className="text-cyan-400 font-semibold">
+            {workshop.year}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+)}
+
         </div>
       </div>
     </section>
