@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 import { GraduationCap, Award, BookOpen, Trophy, Calendar, MapPin } from 'lucide-react';
 
 const Education = () => {
@@ -28,18 +28,26 @@ const Education = () => {
       color: 'from-orange-500 to-yellow-500'
     },
     {
-      title: 'The Complete Full Stack Web Development Bootcamp by Dr. Angela YU',
-      issuer: 'Udemy',
-      date: '2022',
-      credentialId: '',
-      color: 'from-green-500 to-emerald-500'
+      title: 'Live JavaScript Bootcamp: Learn, Code, Build Together (Batch 1)',
+      issuer: 'Learnz Development Hub',
+      date: 'Nov 12 2024',
+      credentialId: 'CERT-2025-52b47e24-7b29-43ef-9ecf-72fa618722f1',
+      color: 'from-orange-500 to-yellow-500'
     },
     {
       title: 'React Developer Certification in 12 days Live classes',
       issuer: 'Learnz Development Hub',
-      date: '2025',
-      CertificateId: 'CERT-2025-60e96308-3e86-4b57-affe-1144cbe1ddac',
+      date: 'Feb 6 2025',
+      credentialId: 'CERT-2025-60e96308-3e86-4b57-affe-1144cbe1ddac',
       color: 'from-blue-500 to-purple-500'
+    },
+    
+    {
+      title: 'Java Funsamentals Course Completion',
+      issuer: 'Uniq Technologies',
+      date: 'June 2025',
+      credentialId: 'UQ25-0023',
+      color: 'from-green-400 to-emerald-500'
     },
     {
       title: '3 Months Frontend Development Course (HTML + CSS + JavaScript + ReactJS + AI Tools)',
@@ -49,11 +57,11 @@ const Education = () => {
       color: 'from-cyan-400 to-blue-600'
     },
     {
-      title: 'upcoming',
-      issuer: 'upcoming',
-      date: '----',
-      credentialId: '------',
-      color: 'from-green-400 to-emerald-500'
+      title: 'The Complete Full Stack Web Development Bootcamp by Dr. Angela YU',
+      issuer: 'Udemy',
+      date: '2022',
+      credentialId: '',
+      color: 'from-green-500 to-emerald-500'
     },
     {
       title: 'upcoming',
@@ -62,6 +70,8 @@ const Education = () => {
       credentialId: '------',
       color: 'from-sky-400 to-indigo-600'
     },
+
+
 
     
   ];
