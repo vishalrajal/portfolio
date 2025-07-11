@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Code, Database, Globe, Smartphone, Award, Users, Lightbulb, Target } from 'lucide-react';
 
+
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -64,11 +65,11 @@ const About = () => {
     <section id="about" className="py-20 bg-gray-800/50 relative overflow-hidden" ref={sectionRef}>
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute top-4 left-4 w-20 h-20 md:top-10 md:left-10 md:w-32 md:h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-purple-500/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className={`text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent transform transition-all duration-1000 ${

@@ -77,20 +77,20 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-gray-800/50 relative overflow-hidden" ref={sectionRef}>
       {/* Animated background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 right-10 w-48 h-48 bg-blue-500/30 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-10 left-10 w-64 h-64 bg-purple-500/30 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-4 right-4 w-24 h-24 md:top-10 md:right-10 md:w-48 md:h-48 bg-blue-500/30 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-4 left-4 w-32 h-32 md:bottom-10 md:left-10 md:w-64 md:h-64 bg-purple-500/30 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent transform transition-all duration-1000 ${
+            <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent transform transition-all duration-1000 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}>
               Professional Experience
             </h2>
-            <div className={`w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto transform transition-all duration-1000 delay-200 ${
+            <div className={`w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto transform transition-all duration-1000 delay-200 ${
               isVisible ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'
             }`}></div>
           </div>
@@ -98,7 +98,7 @@ const Experience = () => {
           {/* Timeline */}
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
+            <div className="hidden sm:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
 
             <div className="space-y-12">
               {experiences.map((exp, index) => (
@@ -112,13 +112,12 @@ const Experience = () => {
                   onMouseLeave={() => setActiveCard(null)}
                 >
                   {/* Timeline dot */}
-                  <div className={`absolute left-6 w-4 h-4 rounded-full bg-gradient-to-r ${exp.color} border-4 border-gray-900 group-hover:scale-150 transition-transform duration-300`}></div>
-                  
+                  <div className={`hidden sm:block absolute left-6 w-4 h-4 rounded-full bg-gradient-to-r ${exp.color} border-4 border-gray-900 group-hover:scale-150 transition-transform duration-300`}></div>
                   {/* Experience card */}
-                  <div className="ml-20 bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700 hover:border-blue-400/50 transition-all duration-500 hover:transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/10">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div className="ml-0 sm:ml-20 bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-8 border border-gray-700 hover:border-blue-400/50 transition-all duration-500 hover:transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/10">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
                       <div>
-                        <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+                        <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
                           {exp.title}
                         </h3>
                         <div className="flex items-center text-blue-400 font-semibold mb-2 group-hover:scale-105 transition-transform duration-300">
@@ -159,7 +158,7 @@ const Experience = () => {
                       {exp.technologies.map((tech, i) => (
                         <span
                           key={i}
-                          className={`px-3 py-1 bg-gradient-to-r ${exp.color} bg-opacity-20 text-blue-300 rounded-full text-sm border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 cursor-default`}
+                          className={`px-3 py-1 bg-gradient-to-r ${exp.color} bg-opacity-20 text-blue-300 rounded-full text-xs sm:text-sm border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 cursor-default`}
                           style={{ animationDelay: `${i * 50}ms` }}
                         >
                           {tech}
