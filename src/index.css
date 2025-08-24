@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  cursor: url(./sword.png) 16 16, auto;
+  cursor: url(/sword.png) 16 16, auto;
 }
